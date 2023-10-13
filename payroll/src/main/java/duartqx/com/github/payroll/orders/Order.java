@@ -57,7 +57,8 @@ public class Order {
         if (!(o instanceof Order))
             return false;
         Order order = (Order) o;
-        return Objects.equals(this.id, order.id) && Objects.equals(this.description, order.description)
+        return Objects.equals(this.id, order.id)
+                && Objects.equals(this.description, order.description)
                 && this.status == order.status;
     }
 

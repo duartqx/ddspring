@@ -22,7 +22,9 @@ public class OrderController {
     private OrderRepository orderRepository;
     private OrderModelAssembler assembler;
 
-    OrderController(OrderRepository orderRepository, OrderModelAssembler assembler) {
+    OrderController(
+        OrderRepository orderRepository, OrderModelAssembler assembler
+    ) {
         this.orderRepository = orderRepository;
         this.assembler = assembler;
     }
