@@ -1,0 +1,12 @@
+GET http://127.0.0.1:8080/employees
+Accept: */*
+
+###
+POST http://127.0.0.1:8080/employees
+Accept: */*
+Content-type: application/json
+
+{
+    "name": "Samwise Gamgee",
+    "role": "gardener"
+}
